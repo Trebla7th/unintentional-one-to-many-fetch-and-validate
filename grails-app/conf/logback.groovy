@@ -33,4 +33,8 @@ if (Environment.isDevelopmentMode() && targetDir != null) {
     }
     logger("StackTrace", ERROR, ['FULL_STACKTRACE'], false)
 }
+
+logger 'org.hibernate.SQL', DEBUG, ['STDOUT']
+logger 'org.hibernate.type', TRACE, ['STDOUT']
+
 root(ERROR, ['STDOUT'])
