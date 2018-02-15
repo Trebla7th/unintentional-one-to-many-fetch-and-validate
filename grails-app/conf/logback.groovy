@@ -35,6 +35,6 @@ if (Environment.isDevelopmentMode() && targetDir != null) {
 }
 
 logger 'org.hibernate.SQL', DEBUG, ['STDOUT']
-logger 'org.hibernate.type', TRACE, ['STDOUT']
+//logger 'org.hibernate.type', TRACE, ['STDOUT']
 
 root(ERROR, ['STDOUT'])
