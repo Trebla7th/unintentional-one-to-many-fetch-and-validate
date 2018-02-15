@@ -59,7 +59,16 @@ class IndexController {
       link1.addToWords(w1)
       link1.addToWords(w11)
       link1.save()
-      a1.save()
+//      a1.save()
+
+      println("link 1 saved")
+
+      WordLink link2 = new WordLink(author: a1)
+      link2.addToWords(w2)
+      link2.addToWords(w12)
+      link2.save()
+//      a1.save()
+
 
       render "${a1} books - ${a1.books}"
     }
